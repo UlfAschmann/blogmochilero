@@ -1,18 +1,25 @@
 html,
 body {
 	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
 }
 .header-blog {
-	height: 75px;
 	background: #00091e;
+	color: #fff;
+}
+.header-blog a {
 	color: #fff;
 }
 .navbar-blog {
 	background: #ff4454;
+	border-radius: 0;
 }
-.navbar-blog a {
+.navbar-blog li a {
 	color: #fff;
 	font-size: 17px;
+	padding-bottom: 12px;
+	border-bottom: 4px solid transparent;
 }
 .navbar-blog button {
 	float: left;
@@ -21,21 +28,217 @@ body {
 	padding: 0;
 	margin-left: 15px
 }
+h1 {
+	font-size: 33px;
+	font-weight: 600;
+}
+.sub-principal {
+	font-size: 24px;
+	margin-bottom: 25px;
+	margin-top: 0;
+	font-weight: 600;
+	font-style: italic;
+	color: #5b5b5f;
+}
+article {
+	margin: 25px 0;
+}
+.titulo-articulo {
+	font-size: 24px;
+	font-weight: 900;
+}
+.titulo-articulo a {
+	color: #000;
+	text-decoration: none;
+}
+.titulo-articulo a:hover {
+	color: #5b5b5f;
+}
+.btn-categoria {
+	color: #fff;
+	background: #87868a;
+}
+.btn-categoria:hover {
+	background: #ff4454;
+	color: #fff;
+}
+.how {
+	color: #87868a;
+}
+.how a {
+	font-weight: 600;
+	color: #87868a;
+	text-decoration: underline;
+}
+.how a:hover {
+	color: #ff4454;
+}
+.separador {
+	color: #ff4454;
+	font-weight: 600;
+}
+.subtitulo-articulo {
+	font-size: 18px;
+}
+article footer {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.counters {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+.counters li {
+	display: inline-block;
+	margin-right: 15px;
+}
+.counters li a {
+	text-decoration: none;
+	color: #87868a;
+}
+.counters li a:hover {
+	text-decoration: underline;
+}
+.counters a i {
+	color: #ff4454;
+}
+.btn-read {
+	border-radius: 25px;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .3);
+	background: #fff;
+	border: 2px solid #ff4454;
+	color: #ff4454;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+.btn-read:hover {
+	background: #ff4454;
+	color: #fff;
+	box-shadow: none;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+.btn-read i {
+	margin-left: 10px;
+}
+.pagination li a {
+	border: 1px solid transparent;
+	color: #87868a;
+	font-weight: 600;
+	font-size: 18px;
+}
+.pagination li a:hover {
+	background: transparent;
+	border: 1px solid transparent;
+	color: #ff4454;
+}
+.flex {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
 
 /*==========  Mobile First Method  ==========*/
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 320px) {
+	.navbar-header {
+		border-bottom: 1px solid #fff;
+	}
+	.navbar-blog li a:hover {
+		background: #932b3d;
+		border-bottom: 4px solid #932b3d;
+		font-weight: 600;
+	}
+	.navbar-blog li a:active,
+	.navbar-blog li a:focus {
+		background: #932b3d;
+		border-bottom: 4px solid #932b3d;
+		font-weight: 600;
+	}
+	.header-blog img {
+		padding: 5px 0;
+		width: 50%;
+	}
+	.header-blog ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.header-blog ul li {
+		display: inline-block;
+		font-size: 14px;
+		margin: 0 5px;
+	}
+}
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 480px) {
+	.header-blog img {
+		padding: 15px 0;
+		width: 30%;
+	}
+}
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+	.navbar-blog li a:hover,
+	.navbar-blog li a:active,
+	.navbar-blog li a:focus {
+		background: transparent;
+		border-bottom: 4px solid #932b3d;
+		font-weight: 600;
+	}
+	.header-blog ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.header-blog img {
+		padding: 15px 0;
+		width: 25%;
+	}
+	.header-blog ul li {
+		display: inline-block;
+		font-size: 22px;
+		margin: 0 10px;
+	}
+}
 
 /* Medium Devices, Desktops */
 
