@@ -12,6 +12,12 @@ body {
 	color: #fff;
 }
 
+.header-blog .logos
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
 .header-blog ul
 {
     display: flex;
@@ -22,15 +28,9 @@ body {
     width: 100%;
 }
 
-.header-blog figure img:first-child
+.header-blog figure img
 {
-    width: 200px;
-    margin-right: 20px;
-}
-
-.header-blog figure img:last-child
-{
-    width: 160px;
+    width: 120px;
 }
 .navbar-blog {
 	background: #ff4454;
@@ -39,7 +39,7 @@ body {
 .navbar-blog li a {
 	color: #fff;
 	font-size: 17px;
-	padding-bottom: 12px;
+	padding-bottom: 13px;
 	border-bottom: 2px solid transparent;
 }
 .navbar-blog button {
@@ -105,6 +105,7 @@ article {
 .subtitulo-articulo {
 	font-size: 18px;
     color:#5B5B5F;
+    margin-bottom: 20px;
 }
 article footer {
 	display: -ms-flexbox;
@@ -255,12 +256,15 @@ article footer {
 /*==========  Mobile First Method  ==========*/
 
 
-/* Custom, iPhone Retina */#00091e;
+/* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {
-	.navbar-header {
-		border-bottom: 2px solid #fff;
-	}
+
+    .container>.navbar-collapse
+    {
+        border-top: 1px solid white;
+    }
+
 	.navbar-blog li a:hover {
 		background: #932b3d;
 		border-bottom: 2px solid #932b3d;
@@ -283,8 +287,6 @@ article footer {
 		font-size: 14px;
 		margin: 0 5px;
 	}
-
-
 }
 
 /* Extra Small Devices, Phones */
@@ -292,18 +294,11 @@ article footer {
 @media only screen and (min-width: 480px) {
 	.header-blog img {
 		padding: 15px 0;
-		width: 30%;
 	}
 
-    .header-blog ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-        width: 220px;
-	}
-	.header-blog img {
+
+	.header-blog figure img {
 		padding: 15px 0;
-		width: 25%;
 	}
 	.header-blog ul li {
 		display: inline-block;
@@ -315,6 +310,12 @@ article footer {
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
+    .navbar
+    {
+        margin-bottom: 0;
+        border:0;
+    }
+
     .navbar-nav
     {
         float: none;
@@ -338,6 +339,28 @@ article footer {
     {
         background: transparent;
     }
+
+    .container>.navbar-collapse
+    {
+        border-top: none;
+    }
+
+    .header-blog .logos
+    {
+        margin: 0;
+    }
+
+    .header-blog figure img
+    {
+        width: 130px;
+    }
+
+    .header-blog ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+        width: 220px;
+	}
 
 }
 

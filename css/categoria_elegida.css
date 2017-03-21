@@ -1,0 +1,156 @@
+aside h2
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom:25px;
+}
+
+aside h2 span
+{
+    color: #FF4454;
+}
+
+aside > form
+{
+    border-bottom: 1px solid #C2C3C9;
+    padding-bottom: 35px;
+}
+
+aside > form input
+{
+    width: 100%;
+}
+
+aside > form input[type="text"]
+{
+    border: 0;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+aside > form input[type="submit"]
+{
+    background: #FF4454;
+    border: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:8px 0;
+}
+
+aside .labels
+{
+    border-bottom: 1px solid #C2C3C9;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+aside .labels .labelContainer
+{
+    margin-bottom: 30px;
+}
+
+#searchAside
+{
+    border: 1px solid #89878B;
+    border-radius:30px;
+    overflow: hidden;
+    width:100%;
+}
+
+#searchAside .form-control
+{
+    border:none;
+    box-shadow: none;
+}
+
+#searchAside .input-group-addon
+{
+    background: transparent;
+    border: none;
+    color:#9A999E;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.entradasDestacadas article
+{
+    display: flex;
+    align-items: center;
+}
+
+.entradasDestacadas article div
+{
+    margin-left: 13px;
+}
+
+.entradasDestacadas article h3
+{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.entradasDestacadas article hr
+{
+    margin: 10px 0;
+    border-top-color:#FF4454;
+    width: 45px;
+}
+
+.entradasDestacadas article p
+{
+    margin-bottom:0;
+}
+
+.entradasDestacadas article .fecha
+{
+    font-size: 14px;
+}
+
+.entradasDestacadas article .fecha .fa
+{
+    margin-right: 6px;
+    color: #FF4454;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px){
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px){
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px){
+    #principal
+    {
+        background: url(../img/headerSeccion.jpg);
+        background-size: cover;
+        color:white;
+    }
+
+    #searchAside
+    {
+        width: 60%;
+    }
+
+    .sub-principal{
+        color:white;
+    }
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
