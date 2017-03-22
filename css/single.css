@@ -1,0 +1,234 @@
+main
+{
+    margin-bottom:30px;
+}
+
+main > .row:nth-child(2) .col-md-8 h3
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main > .row:nth-child(2) .col-md-8 figure
+{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+main figure figcaption
+{
+    font-style: italic;
+    font-size: 14px;
+    margin-top:5px;
+}
+
+main .botonCta
+{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main .botonCta p
+{
+    font-weight: bold;
+}
+
+main .botonCta button
+{
+    background:#FF4454;
+    border:none;
+    border-radius: 4px;
+    color:white;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: bold;
+    padding:20px 80px;
+}
+
+main footer
+{
+    display: flex;
+}
+
+main footer article:first-child
+{
+    padding-right:30px;
+}
+
+main footer article:last-child
+{
+    border-left:1px solid #C2C3C9;
+    padding-left:30px;
+}
+
+main footer h3
+{
+    color:#5B5B5F;
+    margin-top:0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+main footer p
+{
+    margin-bottom:0;
+}
+
+main footer .counters
+{
+    font-size: 24px;
+}
+
+aside h2
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom:25px;
+}
+
+aside h2 span
+{
+    color: #FF4454;
+}
+
+aside > form
+{
+    border-bottom: 1px solid #C2C3C9;
+    padding-bottom: 35px;
+}
+
+aside > form input
+{
+    width: 100%;
+}
+
+aside > form input[type="text"]
+{
+    border: 0;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+aside > form input[type="submit"]
+{
+    background: #FF4454;
+    border: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:8px 0;
+}
+
+aside .labels
+{
+    border-bottom: 1px solid #C2C3C9;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+aside .labels .labelContainer
+{
+    margin-bottom: 30px;
+}
+
+#searchAside
+{
+    border: 1px solid #89878B;
+    border-radius:30px;
+    overflow: hidden;
+    width:100%;
+}
+
+#searchAside .form-control
+{
+    border:none;
+    box-shadow: none;
+}
+
+#searchAside .input-group-addon
+{
+    background: transparent;
+    border: none;
+    color:#9A999E;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.entradasDestacadas article
+{
+    display: flex;
+    align-items: center;
+}
+
+.entradasDestacadas article div
+{
+    margin-left: 13px;
+}
+
+.entradasDestacadas article h3
+{
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.entradasDestacadas article hr
+{
+    margin: 10px 0;
+    border-top-color:#FF4454;
+    width: 45px;
+}
+
+.entradasDestacadas article p
+{
+    margin-bottom:0;
+}
+
+.entradasDestacadas article .fecha
+{
+    font-size: 14px;
+}
+
+.entradasDestacadas article .fecha .fa
+{
+    margin-right: 6px;
+    color: #FF4454;
+}
+
+#principal
+{
+    color:#211915;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px){
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px){
+
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px){
+
+
+    #searchAside
+    {
+        width: 60%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
