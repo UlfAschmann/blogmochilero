@@ -32,11 +32,6 @@ aside > form input[type="text"]
 
 aside > form input[type="submit"]
 {
-    background: #FF4454;
-    border: none;
-    color:white;
-    text-transform: uppercase;
-    font-size: 12px;
     padding:8px 0;
 }
 
