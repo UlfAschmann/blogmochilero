@@ -74,6 +74,9 @@
         </div>
     </header>
 	<main class="container">
+	    <div id="buttonUp" data-link="#headerBlog">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
 		<div class="row">
 		    <section class="col-xs-12 col-md-8">
                 <div class="row">
@@ -223,7 +226,7 @@
 		            <h2>Suscríbete y recibe exclusivas promociones</h2>
 		            <form action="">
 		                <input type="text" placeholder="Ingresa tu correo electrónico">
-		                <input type="submit" value="Enviar">
+		                <input type="submit" class="btn btn-read" value="Enviar">
 		            </form>
 		            <section class="labels">
 		                <h2>Categorías disponibles en <span>hoteles</span></h2>
@@ -237,7 +240,7 @@
 		                </div>
 		                <div class="form-group" id="searchAside">
                             <div class="input-group">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" placeholder="Buscar temas">
                                 <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
                             </div>
                         </div>
@@ -373,5 +376,6 @@
 		});
 
 	</script>
+	<script src="js/scrollTop.js"></script>
 </body>
 </html>

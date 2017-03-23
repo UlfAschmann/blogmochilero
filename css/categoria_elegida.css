@@ -1,3 +1,18 @@
+main #buttonUp
+{
+    background: rgba(7,0,3,.8);
+    color:white;
+    cursor: pointer;
+    font-size: 30px;
+    padding:10px 25px;
+    position:fixed;
+    z-index: 100;
+    top: 100%;
+    right: 0;
+    margin-top: -100px;
+    display: none;
+}
+
 aside h2
 {
     text-transform: uppercase;
@@ -30,6 +45,11 @@ aside > form input[type="text"]
     margin-bottom: 20px;
 }
 
+aside > form input[type="text"]:focus
+{
+    outline: 0;
+}
+
 aside > form input[type="submit"]
 {
     padding:8px 0;
@@ -53,6 +73,12 @@ aside .labels .labelContainer
     border-radius:30px;
     overflow: hidden;
     width:100%;
+    text-transform: uppercase;
+}
+
+#searchAside input
+{
+    text-transform: uppercase;
 }
 
 #searchAside .form-control

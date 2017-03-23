@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<header class="header-blog">
+	<header id="headerBlog" class="header-blog">
 		<div class="container">
 			<div class="flex">
                 <figure class="logos">
@@ -64,7 +64,9 @@
 		</div>
 	</nav>
 	<main class="container">
-
+        <div id="buttonUp" data-link="#headerBlog">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
         <div class="row">
             <header id="principal" class="col-xs-12">
                <hgroup>
@@ -80,8 +82,6 @@
 
 		<div class="row">
 		    <section class="col-xs-12 col-md-8">
-
-
 
                 <figure>
                    <img class="img-responsive" src="http://lorempixel.com/920/370/" alt="">
@@ -148,8 +148,9 @@
 		                    <button type="button" class="btn btn-categoria btn-xs">Extra </button>
 		                </div>
 		                <div class="form-group" id="searchAside">
+
                             <div class="input-group">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" placeholder="Buscar temas">
                                 <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
                             </div>
                         </div>
@@ -264,5 +265,7 @@
 		});
 
 	</script>
+	<script src="js/scrollTop.js"></script>
+
 </body>
 </html>
