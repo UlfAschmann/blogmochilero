@@ -110,28 +110,9 @@ aside > form
     padding-bottom: 35px;
 }
 
-aside > form input
+aside > button
 {
     width: 100%;
-}
-
-aside > form input[type="text"]
-{
-    border: 0;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 4px;
-    margin-bottom: 20px;
-}
-
-aside > form input[type="text"]:focus
-{
-    outline: 0;
-}
-
-
-aside > form input[type="submit"]
-{
-    padding:8px 0;
 }
 
 aside .labels

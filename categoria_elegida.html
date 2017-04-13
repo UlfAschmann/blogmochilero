@@ -224,10 +224,7 @@
 		    <section class="col-xs-12 col-md-4">
 		        <aside>
 		            <h2>Suscríbete y recibe exclusivas promociones</h2>
-		            <form action="">
-		                <input type="text" placeholder="Ingresa tu correo electrónico">
-		                <input type="submit" class="btn btn-read" value="Enviar">
-		            </form>
+		            <button data-toggle="modal" data-target="#modalSuscribete" class="btn btn-read">Suscríbete</button>
 		            <section class="labels">
 		                <h2>Categorías disponibles en <span>hoteles</span></h2>
 		                <div class="labelContainer">
@@ -364,7 +361,68 @@
             </article>
         </div>
     </footer>
+     <!-- Modal -->
 
+    <div class="modal fade" id="modalSuscribete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Se parte de nuestra red de viajeros</h4>
+                      </div>
+
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p>Completa el siguiente formulario para recibir promociones personalizadas</p>
+                            </div>
+                        </div>
+                            <form action="">
+                                <div class="row">
+                                    <input type="text" placeholder="Nombre(s)">
+                                    <input type="text" placeholder="Apellidos">
+                                </div>
+
+                                <div class="row">
+
+                                    <input type="text" placeholder="Correo">
+
+                                    <select name="genero" id="elegirGenero">
+                                        <option value="">-- Género --</option>
+                                        <option value="">Masculino</option>
+                                        <option value="">Femenino</option>
+                                    </select>
+
+                                    <select name="estado" id="elegirEstado">
+                                        <option value="">-- Estado --</option>
+                                    </select>
+                                </div>
+
+                                <div class="row fechaNacimiento">
+
+                                    <label for="">Fecha de nacimiento</label>
+
+                                    <select name="" id="">
+                                        <option value="">-- Día --</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">-- Mes --</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">-- Año --</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                   <input type="submit" value="Enviar" class="btn btn-read">
+                                </div>
+                            </form>
+                        </div>
+
+                </div>
+          </div>
+    </div>
+    <!-- Modal -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>

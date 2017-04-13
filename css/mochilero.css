@@ -288,6 +288,83 @@ article footer {
 	}
 }
 
+.modal
+{
+     border-radius: 0;
+}
+
+.modal .close
+{
+    color:#ff4454;
+}
+
+.modal p
+{
+    margin-bottom:25px;
+    text-align: center;
+}
+
+.modal h4
+{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal .row label
+{
+    font-size: 13px;
+}
+
+.modal .row
+{
+    display: flex;
+    padding-right: 25px;
+    padding-left:25px;
+    flex-direction: column;
+}
+
+.modal .row.fechaNacimiento
+{
+    flex-direction: row;
+}
+
+.modal .row.fechaNacimiento select
+{
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+.modal input,
+.modal select
+{
+    height: 34px;
+    padding: 6px 12px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    margin-bottom: 12px;
+}
+
+.modal input[type="submit"]
+{
+    border-radius: 25px;
+    border: 2px solid #ff4454;
+    margin-top:30px;
+}
+
+.modal input
+{
+    width: 100%;
+}
+
+.modal-content
+{
+    border-radius: 0;
+}
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (min-width: 480px) {
@@ -349,6 +426,35 @@ article footer {
 		font-size: 22px;
 		margin: 0 10px;
 	}
+
+    .modal .row
+    {
+        flex-direction: row;
+    }
+
+    .modal .row.fechaNacimiento
+    {
+        justify-content: space-between;
+    }
+
+    .modal .row input,
+    .modal .row select
+    {
+        margin-left: 8px;
+    }
+
+    .modal .row input:first-child,
+    .modal .row select:first-child
+    {
+        margin-left:0;
+    }
+
+    .modal input[type="submit"]:first-child
+    {
+        display: block;
+        margin:25px auto 0 auto;
+        width: 25%;
+    }
 
 }
 
