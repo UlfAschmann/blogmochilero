@@ -64,7 +64,7 @@
 		</div>
 	</nav>
 
-	<main class="container">
+	<main class="container" id="mainPrincipal">
         <div id="buttonUp" data-link="#headerBlog">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
@@ -255,63 +255,73 @@
     <div class="modal fade" id="modalSuscribete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
                 <div class="modal-content">
-
-                      <div class="modal-header">
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">Se parte de nuestra red de viajeros</h4>
-                      </div>
+                    </div>
 
-                      <div class="modal-body">
+                    <div class="modal-body">
+
                         <div class="row">
                             <div class="col-xs-12">
                                 <p>Completa el siguiente formulario para recibir promociones personalizadas</p>
                             </div>
                         </div>
-                            <form action="">
-                                <div class="row">
-                                    <input type="text" placeholder="Nombre(s)">
-                                    <input type="text" placeholder="Apellidos">
-                                </div>
 
-                                <div class="row">
+                        <form action="">
+                            <div class="row">
+                                <input type="text" placeholder="Nombre(s)">
+                                <input type="text" placeholder="Apellidos">
+                            </div>
 
-                                    <input type="text" placeholder="Correo">
+                            <div class="row">
 
-                                    <select name="genero" id="elegirGenero">
-                                        <option value="">-- Género --</option>
-                                        <option value="">Masculino</option>
-                                        <option value="">Femenino</option>
-                                    </select>
+                                <input type="text" placeholder="Correo">
 
-                                    <select name="estado" id="elegirEstado">
-                                        <option value="">-- Estado --</option>
-                                    </select>
-                                </div>
+                                <select name="genero" id="elegirGenero">
+                                    <option value="">-- Género --</option>
+                                    <option value="">Masculino</option>
+                                    <option value="">Femenino</option>
+                                </select>
 
-                                <div class="row fechaNacimiento">
+                                <select name="estado" id="elegirEstado">
+                                    <option value="">-- Estado --</option>
+                                </select>
+                            </div>
 
-                                    <label for="">Fecha de nacimiento</label>
+                            <div class="row fechaNacimiento">
 
-                                    <select name="" id="">
-                                        <option value="">-- Día --</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">-- Mes --</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="">-- Año --</option>
-                                    </select>
-                                </div>
-                                <div class="row">
-                                   <input type="submit" value="Enviar" class="btn btn-read">
-                                </div>
-                            </form>
-                        </div>
+                                <label for="">Fecha de nacimiento</label>
 
+                                <select name="" id="">
+                                    <option value="">-- Día --</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">-- Mes --</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">-- Año --</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                               <input type="submit" value="Enviar" class="btn btn-read">
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
           </div>
     </div>
     <!-- Modal -->
+
+    <section id="popUpTipLectura">
+            <div class="cerrar">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+	        <h1>Los mejores <strong>10 lugares</strong> para comer en Europa</h1>
+	        <h2>Texto muestra para el complemento</h2>
+	        <button>Quiero leer más</button>
+    </section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -325,6 +335,7 @@
 
 	</script>
 	<script src="js/scrollTop.js"></script>
+	<script src="js/popUpTipPelicula.js"></script>
 
 </body>
 </html>

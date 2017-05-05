@@ -1,8 +1,10 @@
+@import url("popUpTipLectura.css");
 
 main
 {
     margin-bottom:30px;
     position: relative;
+    display: block;
 }
 
 

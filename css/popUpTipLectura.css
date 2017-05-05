@@ -1,0 +1,99 @@
+#popUpTipLectura
+{
+    background: rgba(255,66,85,1);
+    background: -moz-linear-gradient(top, rgba(255,66,85,1) 0%, rgba(197,51,85,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,66,85,1)), color-stop(100%, rgba(197,51,85,1)));
+    background: -webkit-linear-gradient(top, rgba(255,66,85,1) 0%, rgba(197,51,85,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,66,85,1) 0%, rgba(197,51,85,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,66,85,1) 0%, rgba(197,51,85,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,66,85,1) 0%, rgba(197,51,85,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4255', endColorstr='#c53355', GradientType=0 );
+    bottom:-335px;
+    box-shadow: 0px 2px 22px rgba(0,0,0,.8);
+    color:white;
+    height: 280px;
+    opacity:0;
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+}
+
+#popUpTipLectura button
+{
+    background: white;
+    border:2px solid white;
+    border-radius:30px;
+    bottom: 0;
+    box-shadow: 0px 7px 5px rgba(0,0,0,.4);
+    color:#FF4454;
+    display: block;
+    font-size:18px;
+    font-weight: bold;
+    left:50%;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+    padding:10px 25px;
+    position: absolute;
+    text-transform: uppercase;
+    transition:all .5s ease;
+    transform: translateX(-50%);
+    width:230px;
+}
+
+#popUpTipLectura button:hover
+{
+    background:transparent;
+    color:white;
+}
+
+#popUpTipLectura h1
+{
+    font-size:23px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#popUpTipLectura h2
+{
+    font-size:21px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+#popUpTipLectura .cerrar
+{
+    background: white;
+    border:2px solid #FF4454;
+    border-radius: 50%;
+    color:#FF4454;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px 8px;
+    position: absolute;
+    right: -10px;
+    top:-10px;
+}
+
+@media screen and (min-width:768px){
+    #popUpTipLectura {
+        height: 310px;
+        margin-right: 80px;
+        left:auto;
+        right:0;
+        width: 310px;
+    }
+
+    #popUpTipLectura h1,
+    #popUpTipLectura h2
+    {
+        text-align: right;
+
+    }
+
+
+}
